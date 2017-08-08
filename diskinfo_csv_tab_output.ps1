@@ -11,9 +11,7 @@ Foreach ($s in $servers)
 	$PhysicalMemory = Get-WmiObject CIM_PhysicalMemory -ComputerName $s | Measure-Object -Property capacity -Sum | % { [Math]::Round(($_.sum / 1GB), 2) }
     $Pagefilesize=get-wmiobject -ComputerName $s Win32_pagefileusage | % {$_.AllocatedBaseSize} 
     $network = Get-WmiObject Win32_NetworkAdapterConfiguration -EA Stop | ? {$_.IPEnabled} 
-        foreach ($Network in $Networks) {            
-                 $IPAddress  = $Network.IpAddress[0]                       
-                                         }
+    $IPAddress  = $Network.IpAddress[0]             
     $MACAddress  = $Network.MACAddress
 	Foreach ($CPU in $CPUInfo)
 	{
@@ -40,4 +38,4 @@ Foreach ($s in $servers)
 		$infoColl += $infoObject
 	}
 }
-$infoColl | Export-Csv -path C:\git\suresh-test-git\Server_Inventory_$((Get-Date).ToString('MM-dd-yyyy')).csv -NoTypeInformation #Export the results in csv file.
+# $infoColl | Export-Csv -path C:\Users\Suresh\Desktop\Server_Inventory_$((Get-Date).ToString('MM-dd-yyyy')).csv -NoTypeInformation #Export the results in csv file.
