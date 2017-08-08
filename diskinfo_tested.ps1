@@ -29,6 +29,19 @@
     https://technet.microsoft.com/en-us/library/ee176674.aspx
 #>
 
+#$serverlist=get-content .\servers.txt  
+$serverlist=get-content C:\git\suresh-test-git\servers.txt
+write-output "Server,RAM,Pagefile" 
+ 
+foreach ($server in $serverlist) { 
+ 
+ $physicalmem=get-wmiobject -computer $server Win32_ComputerSystem | % {$_.TotalPhysicalMemory} 
+ $Physicalmem=[math]::round($physicalmem/1MB,0) 
+ $Pagefilesize=get-wmiobject -computer $server Win32_pagefileusage | % {$_.AllocatedBaseSize} 
+ Write-Output "$server,$physicalmem,$pagefilesize" 
+ 
+}
+
 $exportPath = "C:\git\suresh-test-git\" # I change this to a central fileshare
 
 # Your computers.txt will need to be in this folder.
@@ -44,4 +57,7 @@ $driveinfo = Get-WMIobject win32_LogicalDisk -ComputerName . -filter "DriveType=
 # Various Output Options
 #$driveinfo | Out-GridView 
 $driveinfo | Format-Table -AutoSize
-$driveinfo | Export-Csv "$exportPath\diskinfo.csv" -NoTypeInformation -NoClobber -Append
+ $physicalmem=get-wmiobject -computer . Win32_ComputerSystem | % {$_.TotalPhysicalMemory} 
+ $Physicalmem=[math]::round($physicalmem/1MB,0)
+ $Pagefilesize=get-wmiobject -computer . Win32_pagefileusage | % {$_.AllocatedBaseSize} 
+#$driveinfo | Export-Csv "$exportPath\diskinfo.csv" -NoTypeInformation -NoClobber -Append
