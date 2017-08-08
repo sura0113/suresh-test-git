@@ -31,7 +31,7 @@
 
 #$serverlist=get-content .\servers.txt  
 $serverlist=get-content C:\git\suresh-test-git\servers.txt
-write-output "Server,RAM,Pagefile" 
+write-output "System Name, Installed Memory, Pagefile Size" 
  
 foreach ($server in $serverlist) { 
  
@@ -56,7 +56,7 @@ $driveinfo = Get-WMIobject win32_LogicalDisk -ComputerName . -filter "DriveType=
 
 # Various Output Options
 #$driveinfo | Out-GridView 
-$driveinfo | Format-Table -AutoSize
+ $driveinfo | Format-Table -AutoSize
  $physicalmem=get-wmiobject -computer . Win32_ComputerSystem | % {$_.TotalPhysicalMemory} 
  $Physicalmem=[math]::round($physicalmem/1MB,0)
  $Pagefilesize=get-wmiobject -computer . Win32_pagefileusage | % {$_.AllocatedBaseSize} 
