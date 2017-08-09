@@ -1,0 +1,9 @@
+Get-WmiObject Win32_LogicalDisk -Filter "DriveType='3'" `
+  -ComputerName (Get-Content C:\scripts\servers.txt) | `
+  Format-Table `
+    @{l="Server";e={$_.SystemName}}, `
+    @{l="Drive Letter";e={$_.DeviceID}}, `
+    @{l="Free Space (GB)";e={"{0:n2}" -f ($_.freespace/1gb)}}, `
+    @{l="Total Disk (GB)";e={"{0:n2}" -f ($_.size/1gb)}}, `
+    @{l="Percentage Free";e={ "{0:P2}" -f (([Int64]$_.FreeSpace / [Int64]$_.Size)) }}, `
+	@{l="Percentage Used";e={ "{0:P2}" -f (1 - ([Int64]$_.FreeSpace / [Int64]$_.Size)) }} | ft -AutoSize
