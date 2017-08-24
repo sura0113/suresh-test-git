@@ -1,0 +1,1 @@
+{"8c6cf984-e0f4-4d0e-8b04-84d46ed2f363":{"resourceKinds":[{"resourceKindKey":"ClusterComputeResource","adapterKindKey":"VMWARE"}],"name":"1-Average VM CPU Contention in a Cluster(%)","formula":"avg(${adapterkind=VMWARE, resourcekind=VirtualMachine, attribute=cpu|capacity_contentionPct, depth=2})","description":""}}

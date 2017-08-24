@@ -1,0 +1,1 @@
+{"24e70bda-8214-4fc4-b258-29d2b8944c27":{"resourceKinds":[{"resourceKindKey":"ClusterComputeResource","adapterKindKey":"VMWARE"}],"name":"11-Max VM IOPS in a Cluster","formula":"max(${adapterkind=VMWARE, resourcekind=VirtualMachine, attribute=virtualDisk|commandsAveraged_average, depth=2})","description":""}}

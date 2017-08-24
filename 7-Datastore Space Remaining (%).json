@@ -1,0 +1,1 @@
+{"53c99a82-ecd7-4053-93cf-08b54be817c0":{"resourceKinds":[{"resourceKindKey":"ClusterComputeResource","adapterKindKey":"VMWARE"}],"name":"7-Datastore Space Remaining (%)","formula":"100-avg(${this, attribute=Super Metric|sm_6ad28eb5-ef7e-4a88-8fb7-8b4225944f48})/avg(${this, attribute=Super Metric|sm_a5a9c11a-f27c-446c-8bd5-48a11124b543})*100","description":""}}

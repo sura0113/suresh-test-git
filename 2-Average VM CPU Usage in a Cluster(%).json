@@ -1,0 +1,1 @@
+{"018e18cb-2ab2-4d86-91b1-c535efd680c9":{"resourceKinds":[{"resourceKindKey":"ClusterComputeResource","adapterKindKey":"VMWARE"}],"name":"2-Average VM CPU Usage in a Cluster(%)","formula":"avg(${adapterkind=VMWARE, resourcekind=VirtualMachine, attribute=cpu|usage_average, depth=2})","description":""}}

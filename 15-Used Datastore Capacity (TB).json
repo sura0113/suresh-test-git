@@ -1,0 +1,1 @@
+{"6ad28eb5-ef7e-4a88-8fb7-8b4225944f48":{"resourceKinds":[{"resourceKindKey":"ClusterComputeResource","adapterKindKey":"VMWARE"}],"name":"15-Used Datastore Capacity (TB)","formula":"avg(${this, attribute=diskspace|total_usage})/1000","description":""}}

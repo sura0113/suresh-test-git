@@ -1,0 +1,1 @@
+{"33cdf16e-a434-4146-8a78-70be0f70a7bd":{"resourceKinds":[{"resourceKindKey":"ClusterComputeResource","adapterKindKey":"VMWARE"}],"name":"3-Average VM Disk Latency in a Cluster(ms)","formula":"avg(${adapterkind=VMWARE, resourcekind=VirtualMachine, attribute=virtualDisk|totalLatency, depth=2})","description":""}}

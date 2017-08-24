@@ -1,0 +1,1 @@
+{"c9228097-8355-42a7-af04-ff7f4480227c":{"resourceKinds":[{"resourceKindKey":"ClusterComputeResource","adapterKindKey":"VMWARE"}],"name":"4-Average VM IOPS in a Cluster","formula":"avg(${adapterkind=VMWARE, resourcekind=VirtualMachine, attribute=virtualDisk|commandsAveraged_average, depth=2})","description":""}}

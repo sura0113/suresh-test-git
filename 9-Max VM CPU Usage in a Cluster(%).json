@@ -1,0 +1,1 @@
+{"22c3b3e5-1908-4940-b7f6-b1278fcd229a":{"resourceKinds":[{"resourceKindKey":"ClusterComputeResource","adapterKindKey":"VMWARE"}],"name":"9-Max VM CPU Usage in a Cluster(%)","formula":"max(${adapterkind=VMWARE, resourcekind=VirtualMachine, attribute=cpu|usage_average, depth=2})","description":""}}

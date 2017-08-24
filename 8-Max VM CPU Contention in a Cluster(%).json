@@ -1,0 +1,1 @@
+{"9d0fe16f-e8bb-4fbc-a9ed-cf88215529f5":{"resourceKinds":[{"resourceKindKey":"ClusterComputeResource","adapterKindKey":"VMWARE"}],"name":"8-Max VM CPU Contention in a Cluster(%)","formula":"max(${adapterkind=VMWARE, resourcekind=VirtualMachine, attribute=cpu|capacity_contentionPct, depth=2})","description":""}}

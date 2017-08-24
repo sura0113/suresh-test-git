@@ -1,0 +1,299 @@
+{
+   "localization": {"group": {
+      "de": [
+         {
+            "value": "vSphere-Dashboards",
+            "key": "vSphere Dashboards"
+         },
+         {
+            "value": "vSphere-Konfiguration",
+            "key": "vSphere Configuration"
+         }
+      ],
+      "ko": [
+         {
+            "value": "vSphere 대시보드",
+            "key": "vSphere Dashboards"
+         },
+         {
+            "value": "vSphere 구성",
+            "key": "vSphere Configuration"
+         }
+      ],
+      "zh-TW": [
+         {
+            "value": "vSphere 儀表板",
+            "key": "vSphere Dashboards"
+         },
+         {
+            "value": "vSphere 組態",
+            "key": "vSphere Configuration"
+         }
+      ],
+      "ja": [
+         {
+            "value": "vSphere ダッシュボード",
+            "key": "vSphere Dashboards"
+         },
+         {
+            "value": "vSphere の構成",
+            "key": "vSphere Configuration"
+         }
+      ],
+      "en": [
+         {
+            "value": "vSphere Dashboards",
+            "key": "vSphere Dashboards"
+         },
+         {
+            "value": "vSphere Configuration",
+            "key": "vSphere Configuration"
+         }
+      ],
+      "fr": [
+         {
+            "value": "Tableaux de bord vSphere",
+            "key": "vSphere Dashboards"
+         },
+         {
+            "value": "Configuration de vSphere",
+            "key": "vSphere Configuration"
+         }
+      ],
+      "zh-CN": [
+         {
+            "value": "vSphere 仪表板",
+            "key": "vSphere Dashboards"
+         },
+         {
+            "value": "vSphere 配置",
+            "key": "vSphere Configuration"
+         }
+      ]
+   }},
+   "entries": {"resourceKind": [{
+      "resourceKindKey": "ClusterComputeResource",
+      "internalId": "resourceKind:id:0_::_",
+      "adapterKindKey": "VMWARE"
+   }]},
+   "dashboards": [{
+      "shared": false,
+      "temporary": false,
+      "namePath": "CAPACITY",
+      "creationTime": 1447435730807,
+      "autoswitchEnabled": false,
+      "importAttempts": 1,
+      "columnProportion": "0.48-0.52",
+      "importComplete": true,
+      "description": "",
+      "columnCount": 1,
+      "widgets": [
+         {
+            "collapsed": false,
+            "x": 1,
+            "y": 1,
+            "id": "a8b33366-47c5-4b56-812f-16224961d808",
+            "type": "ResourceList",
+            "title": "SELECT A CLUSTER",
+            "config": {
+               "mode": {"mode": 0},
+               "tagFilter": {
+                  "path": ["/source/kind/kind:resourceKind:id:0_::_"],
+                  "value": {
+                     "bus": [],
+                     "adapterKind": [],
+                     "kind": ["resourceKind:id:0_::_"],
+                     "exclaim": false,
+                     "healthRange": [],
+                     "maintenanceSchedule": [],
+                     "adapterInstance": [],
+                     "collector": [],
+                     "tier": [],
+                     "state": [],
+                     "tag": [],
+                     "day": [],
+                     "status": []
+                  }
+               },
+               "refreshInterval": 300,
+               "refreshContent": {"refreshContent": true},
+               "selectFirstRow": {"selectFirstRow": false},
+               "title": "SELECT A CLUSTER",
+               "additionalColumns": []
+            },
+            "height": 296,
+            "states": [{
+               "value": "o%3Acolumns%3Da%253Ao%25253Aid%25253Ds%2525253Ah1%25255Ehidden%25253Db%2525253A1%25255Ewidth%25253Dn%2525253A100%255Eo%25253Aid%25253Ds%2525253Ah2%25255Ewidth%25253Dn%2525253A180%255Eo%25253Aid%25253Ds%2525253Ah5%25255Ehidden%25253Db%2525253A0%25255Ewidth%25253Dn%2525253A155%255Eo%25253Aid%25253Ds%2525253Ah3%25255Ehidden%25253Db%2525253A1%25255Ewidth%25253Dn%2525253A100%255Eo%25253Aid%25253Ds%2525253Ah4%25255Ehidden%25253Db%2525253A1%25255Ewidth%25253Dn%2525253A100%255Eo%25253Aid%25253Ds%2525253Ah6%25255Ehidden%25253Db%2525253A0%25255Ewidth%25253Dn%2525253A119%255Eo%25253Aid%25253Ds%2525253Ah7%25255Ehidden%25253Db%2525253A1%25255Ewidth%25253Dn%2525253A100%255Eo%25253Aid%25253Ds%2525253Ah8%25255Ehidden%25253Db%2525253A1%25255Ewidth%25253Dn%2525253A100%255Eo%25253Aid%25253Ds%2525253Ah9%25255Ehidden%25253Db%2525253A1%25255Ewidth%25253Dn%2525253A100%255Eo%25253Aid%25253Ds%2525253Ah10%25255Ehidden%25253Db%2525253A1%25255Ewidth%25253Dn%2525253A100%255Eo%25253Aid%25253Ds%2525253Ah11%25255Ehidden%25253Db%2525253A1%25255Ewidth%25253Dn%2525253A100%255Eo%25253Aid%25253Ds%2525253Ah12%25255Ehidden%25253Db%2525253A1%25255Ewidth%25253Dn%2525253A100%255Eo%25253Aid%25253Ds%2525253Ah13%25255Ehidden%25253Db%2525253A1%25255Ewidth%25253Dn%2525253A100%255Eo%25253Aid%25253Ds%2525253Ah14%25255Ehidden%25253Db%2525253A1%25255Ewidth%25253Dn%2525253A100%255Eo%25253Aid%25253Ds%2525253Ah15%25255Ehidden%25253Db%2525253A1%25255Ewidth%25253Dn%2525253A100%255Eo%25253Aid%25253Ds%2525253Ah16%25255Ehidden%25253Db%2525253A1%25255Ewidth%25253Dn%2525253A100%255Eo%25253Aid%25253Ds%2525253Ah17%25255Ehidden%25253Db%2525253A1%25255Ewidth%25253Dn%2525253A100%255Eo%25253Aid%25253Ds%2525253Ah18%25255Ehidden%25253Db%2525253A1%25255Ewidth%25253Dn%2525253A100%255Eo%25253Aid%25253Ds%2525253Ah19%25255Ehidden%25253Db%2525253A1%25255Ewidth%25253Dn%2525253A100%255Eo%25253Aid%25253Ds%2525253Ah20%25255Ehidden%25253Db%2525253A1%25255Ewidth%25253Dn%2525253A100%255Eo%25253Aid%25253Ds%2525253Ah21%25255Ehidden%25253Db%2525253A1%25255Ewidth%25253Dn%2525253A100%255Eo%25253Aid%25253Ds%2525253Ah22%25255Ehidden%25253Db%2525253A1%25255Ewidth%25253Dn%2525253A100%255Eo%25253Aid%25253Ds%2525253Ah23%25255Ehidden%25253Db%2525253A1%25255Ewidth%25253Dn%2525253A100%255Eo%25253Aid%25253Ds%2525253Ah24%25255Ehidden%25253Db%2525253A1%25255Ewidth%25253Dn%2525253A100%255Eo%25253Aid%25253Ds%2525253Ah25%25255Ehidden%25253Db%2525253A1%25255Ewidth%25253Dn%2525253A100%255Eo%25253Aid%25253Ds%2525253Ah26%25255Ehidden%25253Db%2525253A1%25255Ewidth%25253Dn%2525253A100%5EstoreState%3Do%253Asorters%253Da%25253Ao%2525253Aroot%2525253Ds%252525253Adata%2525255Eproperty%2525253Ds%252525253Aname%2525255Edirection%2525253Ds%252525253AASC",
+               "key": "permResGrid_widget_55116c2d-a4a8-45b6-8fd8-b25535a79749_a8b33366-47c5-4b56-812f-16224961d808"
+            }]
+         },
+         {
+            "collapsed": false,
+            "x": 2,
+            "y": 1,
+            "id": "6810831d-616d-41ac-b40e-1d1f3e37d787",
+            "type": "Scoreboard",
+            "title": "CLUSTER CAPACITY DETAILS",
+            "config": {
+               "visualTheme": {"visualTheme": false},
+               "refreshInterval": 300,
+               "refreshContent": {"refreshContent": true},
+               "valueSize": 12,
+               "title": "CLUSTER CAPACITY DETAILS",
+               "boxHeight": null,
+               "showResourceName": {"showResourceName": false},
+               "roundDecimals": 2,
+               "undefined": {"showMetricUnit": false},
+               "mode": {"layoutMode": "fixedView"},
+               "labelSize": 12,
+               "metric": {
+                  "mode": "resource",
+                  "resourceMetrics": [],
+                  "resourceKindMetrics": []
+               },
+               "showSparkline": {"showSparkline": false},
+               "boxColumns": 3,
+               "periodLength": "last24Hour",
+               "selfProvider": {"selfProvider": false},
+               "resInteractionMode": "CAPACITY-DATA.xml"
+            },
+            "height": 296
+         },
+         {
+            "collapsed": false,
+            "x": 1,
+            "y": 2,
+            "id": "36b4f996-5a4c-42e9-9634-af802fdcf8c3",
+            "type": "View",
+            "title": "MAX & AVERAGE CPU USAGE BY VMS OF THE SELECTED CLUSTER",
+            "config": {
+               "resource": null,
+               "selfProvider": {"selfProvider": false},
+               "title": "MAX & AVERAGE CPU USAGE BY VMS OF THE SELECTED CLUSTER",
+               "viewDefinitionId": "b7d27b36-16d7-4a9c-a1e3-4cd9b0dffb27"
+            },
+            "height": 298
+         },
+         {
+            "collapsed": false,
+            "x": 2,
+            "y": 2,
+            "id": "21b0094a-37b6-4389-b75f-c0aea65212de",
+            "type": "View",
+            "title": "MAX & AVERAGE CPU CONTENTION FACED BY VMS OF THE SELECTED CLUSTER",
+            "config": {
+               "resource": null,
+               "selfProvider": {"selfProvider": false},
+               "title": "MAX & AVERAGE CPU CONTENTION FACED BY VMS OF THE SELECTED CLUSTER",
+               "viewDefinitionId": "8cc1ce0a-41bc-4e2f-b32f-e6577c49ccbe"
+            },
+            "height": 300
+         },
+         {
+            "collapsed": false,
+            "x": 1,
+            "y": 3,
+            "id": "2eb3869f-e2bb-45c7-b803-9819f2a433fa",
+            "type": "View",
+            "title": "MAX & AVERAGE MEMORY USAGE BY VMS OF THE SELECTED CLUSTER",
+            "config": {
+               "resource": null,
+               "selfProvider": {"selfProvider": false},
+               "title": "MAX & AVERAGE MEMORY USAGE BY VMS OF THE SELECTED CLUSTER",
+               "viewDefinitionId": "d83001ab-5bae-452f-958f-e4fae93d4304"
+            },
+            "height": 300
+         },
+         {
+            "collapsed": false,
+            "x": 2,
+            "y": 3,
+            "id": "e7efd54d-ce28-414c-b2bc-629834501fd8",
+            "type": "View",
+            "title": "MAX & AVERAGE MEMORY CONTENTION FACED BY VMS OF THE SELECTED CLUSTER",
+            "config": {
+               "resource": null,
+               "selfProvider": {"selfProvider": false},
+               "title": "MAX & AVERAGE MEMORY CONTENTION FACED BY VMS OF THE SELECTED CLUSTER",
+               "viewDefinitionId": "a0d5d754-483a-4cfc-8c75-a786ecec4a6e"
+            },
+            "height": 300
+         },
+         {
+            "collapsed": false,
+            "x": 1,
+            "y": 4,
+            "id": "ee05dfdb-5ced-4c7f-bdd1-32b589ebcc9b",
+            "type": "View",
+            "title": "MAX & AVERAGE IOPS BY VMS OF THE SELECTED CLUSTER",
+            "config": {
+               "resource": null,
+               "selfProvider": {"selfProvider": false},
+               "title": "MAX & AVERAGE IOPS BY VMS OF THE SELECTED CLUSTER",
+               "viewDefinitionId": "841a182e-677a-470f-abcb-0b3c99c6eb77"
+            },
+            "height": 300
+         },
+         {
+            "collapsed": false,
+            "x": 2,
+            "y": 4,
+            "id": "f95bf77e-5766-41ef-a5b7-bd78e8ee567e",
+            "type": "View",
+            "title": "MAX & AVERAGE VIRTUAL DISK LATENCY FACED BY VMS OF THE SELECTED CLUSTER",
+            "config": {
+               "resource": null,
+               "selfProvider": {"selfProvider": false},
+               "title": "MAX & AVERAGE VIRTUAL DISK LATENCY FACED BY VMS OF THE SELECTED CLUSTER",
+               "viewDefinitionId": "69a065f1-0094-4358-827f-6a29dcb893de"
+            },
+            "height": 300
+         }
+      ],
+      "userId": "b81f6c28-28c6-4e2b-8fc2-2f34da3e1179",
+      "isDefault": false,
+      "name": "CAPACITY/CAPACITY & PERFORMANCE DASHBOARD",
+      "rank": 31,
+      "disabled": false,
+      "id": "55116c2d-a4a8-45b6-8fd8-b25535a79749",
+      "locked": false,
+      "widgetInteractions": [
+         {
+            "widgetIdProvider": "a8b33366-47c5-4b56-812f-16224961d808",
+            "type": "resourceId",
+            "widgetIdReceiver": "6810831d-616d-41ac-b40e-1d1f3e37d787"
+         },
+         {
+            "widgetIdProvider": "a8b33366-47c5-4b56-812f-16224961d808",
+            "type": "resourceId",
+            "widgetIdReceiver": "36b4f996-5a4c-42e9-9634-af802fdcf8c3"
+         },
+         {
+            "widgetIdProvider": "a8b33366-47c5-4b56-812f-16224961d808",
+            "type": "resourceId",
+            "widgetIdReceiver": "21b0094a-37b6-4389-b75f-c0aea65212de"
+         },
+         {
+            "widgetIdProvider": "a8b33366-47c5-4b56-812f-16224961d808",
+            "type": "resourceId",
+            "widgetIdReceiver": "2eb3869f-e2bb-45c7-b803-9819f2a433fa"
+         },
+         {
+            "widgetIdProvider": "a8b33366-47c5-4b56-812f-16224961d808",
+            "type": "resourceId",
+            "widgetIdReceiver": "e7efd54d-ce28-414c-b2bc-629834501fd8"
+         },
+         {
+            "widgetIdProvider": "a8b33366-47c5-4b56-812f-16224961d808",
+            "type": "resourceId",
+            "widgetIdReceiver": "ee05dfdb-5ced-4c7f-bdd1-32b589ebcc9b"
+         },
+         {
+            "widgetIdProvider": "a8b33366-47c5-4b56-812f-16224961d808",
+            "type": "resourceId",
+            "widgetIdReceiver": "f95bf77e-5766-41ef-a5b7-bd78e8ee567e"
+         }
+      ]
+   }],
+   "uuid": "9c1a9ad8-3ce2-44e6-889a-d90ad7d2b89e"
+}

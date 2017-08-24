@@ -1,0 +1,1 @@
+{"949cc393-76c8-4ff9-9e76-726287950ae1":{"resourceKinds":[{"resourceKindKey":"ClusterComputeResource","adapterKindKey":"VMWARE"}],"name":"12-Max VM RAM Contention in a Cluster(%)","formula":"max(${adapterkind=VMWARE, resourcekind=VirtualMachine, attribute=mem|host_contentionPct, depth=2})","description":""}}

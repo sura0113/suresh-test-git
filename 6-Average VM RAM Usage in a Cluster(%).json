@@ -1,0 +1,1 @@
+{"0f149cc4-665e-4e12-b96e-80396d48e1a5":{"resourceKinds":[{"resourceKindKey":"ClusterComputeResource","adapterKindKey":"VMWARE"}],"name":"6-Average VM RAM Usage in a Cluster(%)","formula":"avg(${adapterkind=VMWARE, resourcekind=VirtualMachine, attribute=mem|usage_average, depth=2})","description":""}}

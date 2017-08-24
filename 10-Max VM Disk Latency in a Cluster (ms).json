@@ -1,0 +1,1 @@
+{"8f7c4549-a1c5-4d49-a014-7841b2f511ba":{"resourceKinds":[{"resourceKindKey":"ClusterComputeResource","adapterKindKey":"VMWARE"}],"name":"10-Max VM Disk Latency in a Cluster (ms)","formula":"max(${adapterkind=VMWARE, resourcekind=VirtualMachine, attribute=virtualDisk|totalLatency, depth=2})","description":""}}

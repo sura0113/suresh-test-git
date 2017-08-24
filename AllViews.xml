@@ -1,0 +1,383 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Content>
+    <Views>
+        <ViewDef id="b7d27b36-16d7-4a9c-a1e3-4cd9b0dffb27">
+            <Title>MAX &amp; AVERAGE CPU USAGE BY VMS OF THE SELECTED CLUSTER</Title>
+            <Description></Description>
+            <SubjectType adapterKind="VMWARE" resourceKind="ClusterComputeResource" type="self"/>
+            <Usage>dashboard</Usage>
+            <Usage>report</Usage>
+            <Usage>details</Usage>
+            <Usage>content</Usage>
+            <Controls>
+                <Control id="time-interval-selector_id_142" visible="false" type="time-interval-selector">
+                    <Property name="unit" value="DAYS"/>
+                    <Property name="count" value="1"/>
+                </Control>
+                <Control id="attributes-selector_id_143" visible="false" type="attributes-selector">
+                    <Property name="attributeInfos">
+                        <List>
+                            <Item>
+<Value>
+    <Property name="objectType" value="RESOURCE"/>
+    <Property name="attributeKey" value="Super Metric|sm_22c3b3e5-1908-4940-b7f6-b1278fcd229a"/>
+    <Property name="isStringAttribute" value="false"/>
+    <Property name="adapterKind" value="VMWARE"/>
+    <Property name="resourceKind" value="ClusterComputeResource"/>
+    <Property name="rollUpType" value="AVG"/>
+    <Property name="rollUpUnit" value="MINUTES"/>
+    <Property name="rollUpCount" value="5"/>
+    <Property name="transformations">
+        <List>
+            <Item value="NONE"/>
+        </List>
+    </Property>
+    <Property name="isProperty" value="false"/>
+    <Property name="displayName" value="Max VM CPU Usage % in Entire Cluster"/>
+</Value>
+                            </Item>
+                            <Item>
+<Value>
+    <Property name="objectType" value="RESOURCE"/>
+    <Property name="attributeKey" value="Super Metric|sm_018e18cb-2ab2-4d86-91b1-c535efd680c9"/>
+    <Property name="isStringAttribute" value="false"/>
+    <Property name="adapterKind" value="VMWARE"/>
+    <Property name="resourceKind" value="ClusterComputeResource"/>
+    <Property name="rollUpType" value="AVG"/>
+    <Property name="rollUpUnit" value="MINUTES"/>
+    <Property name="rollUpCount" value="5"/>
+    <Property name="transformations">
+        <List>
+            <Item value="NONE"/>
+        </List>
+    </Property>
+    <Property name="isProperty" value="false"/>
+    <Property name="displayName" value="Avg VM CPU Usage % in Entire Cluster"/>
+</Value>
+                            </Item>
+                        </List>
+                    </Property>
+                </Control>
+            </Controls>
+            <DataProviders>
+                <DataProvider dataType="trend-view" id="trend-view_id_141"/>
+            </DataProviders>
+            <Presentation type="line-chart"/>
+        </ViewDef>
+        <ViewDef id="8cc1ce0a-41bc-4e2f-b32f-e6577c49ccbe">
+            <Title>MAX &amp; AVERAGE CPU CONTENTION FACED BY VMS OF THE SELECTED CLUSTER</Title>
+            <Description></Description>
+            <SubjectType adapterKind="VMWARE" resourceKind="ClusterComputeResource" type="self"/>
+            <Usage>dashboard</Usage>
+            <Usage>report</Usage>
+            <Usage>details</Usage>
+            <Usage>content</Usage>
+            <Controls>
+                <Control id="time-interval-selector_id_138" visible="false" type="time-interval-selector">
+                    <Property name="unit" value="DAYS"/>
+                    <Property name="count" value="1"/>
+                </Control>
+                <Control id="attributes-selector_id_139" visible="false" type="attributes-selector">
+                    <Property name="attributeInfos">
+                        <List>
+                            <Item>
+<Value>
+    <Property name="objectType" value="RESOURCE"/>
+    <Property name="attributeKey" value="Super Metric|sm_9d0fe16f-e8bb-4fbc-a9ed-cf88215529f5"/>
+    <Property name="isStringAttribute" value="false"/>
+    <Property name="adapterKind" value="VMWARE"/>
+    <Property name="resourceKind" value="ClusterComputeResource"/>
+    <Property name="rollUpType" value="AVG"/>
+    <Property name="rollUpUnit" value="MINUTES"/>
+    <Property name="rollUpCount" value="5"/>
+    <Property name="transformations">
+        <List>
+            <Item value="NONE"/>
+        </List>
+    </Property>
+    <Property name="isProperty" value="false"/>
+    <Property name="displayName" value="Max VM CPU Cotention % in Entire Cluster"/>
+</Value>
+                            </Item>
+                            <Item>
+<Value>
+    <Property name="objectType" value="RESOURCE"/>
+    <Property name="attributeKey" value="Super Metric|sm_8c6cf984-e0f4-4d0e-8b04-84d46ed2f363"/>
+    <Property name="isStringAttribute" value="false"/>
+    <Property name="adapterKind" value="VMWARE"/>
+    <Property name="resourceKind" value="ClusterComputeResource"/>
+    <Property name="rollUpType" value="AVG"/>
+    <Property name="rollUpUnit" value="MINUTES"/>
+    <Property name="rollUpCount" value="5"/>
+    <Property name="transformations">
+        <List>
+            <Item value="NONE"/>
+        </List>
+    </Property>
+    <Property name="isProperty" value="false"/>
+    <Property name="displayName" value="Avg VM CPU Cotention % in Entire Cluster"/>
+</Value>
+                            </Item>
+                        </List>
+                    </Property>
+                </Control>
+            </Controls>
+            <DataProviders>
+                <DataProvider dataType="trend-view" id="trend-view_id_137"/>
+            </DataProviders>
+            <Presentation type="line-chart"/>
+        </ViewDef>
+        <ViewDef id="d83001ab-5bae-452f-958f-e4fae93d4304">
+            <Title>MAX &amp; AVERAGE MEMORY USAGE BY VMS OF THE SELECTED CLUSTER</Title>
+            <Description></Description>
+            <SubjectType adapterKind="VMWARE" resourceKind="ClusterComputeResource" type="self"/>
+            <Usage>dashboard</Usage>
+            <Usage>report</Usage>
+            <Usage>details</Usage>
+            <Usage>content</Usage>
+            <Controls>
+                <Control id="time-interval-selector_id_154" visible="false" type="time-interval-selector">
+                    <Property name="unit" value="DAYS"/>
+                    <Property name="count" value="1"/>
+                </Control>
+                <Control id="attributes-selector_id_155" visible="false" type="attributes-selector">
+                    <Property name="attributeInfos">
+                        <List>
+                            <Item>
+<Value>
+    <Property name="objectType" value="RESOURCE"/>
+    <Property name="attributeKey" value="Super Metric|sm_1542c5a5-e64e-4e95-b001-1e1f9c080d84"/>
+    <Property name="isStringAttribute" value="false"/>
+    <Property name="adapterKind" value="VMWARE"/>
+    <Property name="resourceKind" value="ClusterComputeResource"/>
+    <Property name="rollUpType" value="AVG"/>
+    <Property name="rollUpUnit" value="MINUTES"/>
+    <Property name="rollUpCount" value="5"/>
+    <Property name="transformations">
+        <List>
+            <Item value="NONE"/>
+        </List>
+    </Property>
+    <Property name="isProperty" value="false"/>
+    <Property name="displayName" value="Max VM RAM usage % in Entire Cluster"/>
+</Value>
+                            </Item>
+                            <Item>
+<Value>
+    <Property name="objectType" value="RESOURCE"/>
+    <Property name="attributeKey" value="Super Metric|sm_0f149cc4-665e-4e12-b96e-80396d48e1a5"/>
+    <Property name="isStringAttribute" value="false"/>
+    <Property name="adapterKind" value="VMWARE"/>
+    <Property name="resourceKind" value="ClusterComputeResource"/>
+    <Property name="rollUpType" value="AVG"/>
+    <Property name="rollUpUnit" value="MINUTES"/>
+    <Property name="rollUpCount" value="5"/>
+    <Property name="transformations">
+        <List>
+            <Item value="NONE"/>
+        </List>
+    </Property>
+    <Property name="isProperty" value="false"/>
+    <Property name="displayName" value="Avg VM RAM usage % in Entire Cluster"/>
+</Value>
+                            </Item>
+                        </List>
+                    </Property>
+                </Control>
+            </Controls>
+            <DataProviders>
+                <DataProvider dataType="trend-view" id="trend-view_id_153"/>
+            </DataProviders>
+            <Presentation type="line-chart"/>
+        </ViewDef>
+        <ViewDef id="a0d5d754-483a-4cfc-8c75-a786ecec4a6e">
+            <Title>MAX &amp; AVERAGE MEMORY CONTENTION FACED BY VMS OF THE SELECTED CLUSTER</Title>
+            <Description></Description>
+            <SubjectType adapterKind="VMWARE" resourceKind="ClusterComputeResource" type="self"/>
+            <Usage>dashboard</Usage>
+            <Usage>report</Usage>
+            <Usage>details</Usage>
+            <Usage>content</Usage>
+            <Controls>
+                <Control id="time-interval-selector_id_150" visible="false" type="time-interval-selector">
+                    <Property name="unit" value="DAYS"/>
+                    <Property name="count" value="1"/>
+                </Control>
+                <Control id="attributes-selector_id_151" visible="false" type="attributes-selector">
+                    <Property name="attributeInfos">
+                        <List>
+                            <Item>
+<Value>
+    <Property name="objectType" value="RESOURCE"/>
+    <Property name="attributeKey" value="Super Metric|sm_949cc393-76c8-4ff9-9e76-726287950ae1"/>
+    <Property name="isStringAttribute" value="false"/>
+    <Property name="adapterKind" value="VMWARE"/>
+    <Property name="resourceKind" value="ClusterComputeResource"/>
+    <Property name="rollUpType" value="AVG"/>
+    <Property name="rollUpUnit" value="MINUTES"/>
+    <Property name="rollUpCount" value="5"/>
+    <Property name="transformations">
+        <List>
+            <Item value="NONE"/>
+        </List>
+    </Property>
+    <Property name="isProperty" value="false"/>
+    <Property name="displayName" value="Max VM Memory Cotention % in Entire Cluster"/>
+</Value>
+                            </Item>
+                            <Item>
+<Value>
+    <Property name="objectType" value="RESOURCE"/>
+    <Property name="attributeKey" value="Super Metric|sm_e85b67ce-4cba-4898-8ba3-2ea70d21137e"/>
+    <Property name="isStringAttribute" value="false"/>
+    <Property name="adapterKind" value="VMWARE"/>
+    <Property name="resourceKind" value="ClusterComputeResource"/>
+    <Property name="rollUpType" value="AVG"/>
+    <Property name="rollUpUnit" value="MINUTES"/>
+    <Property name="rollUpCount" value="5"/>
+    <Property name="transformations">
+        <List>
+            <Item value="NONE"/>
+        </List>
+    </Property>
+    <Property name="isProperty" value="false"/>
+    <Property name="displayName" value="Avg VM Memory Cotention % in Entire Cluster"/>
+</Value>
+                            </Item>
+                        </List>
+                    </Property>
+                </Control>
+            </Controls>
+            <DataProviders>
+                <DataProvider dataType="trend-view" id="trend-view_id_149"/>
+            </DataProviders>
+            <Presentation type="line-chart"/>
+        </ViewDef>
+        <ViewDef id="841a182e-677a-470f-abcb-0b3c99c6eb77">
+            <Title>MAX &amp; AVERAGE IOPS BY VMS OF THE SELECTED CLUSTER</Title>
+            <Description></Description>
+            <SubjectType adapterKind="VMWARE" resourceKind="ClusterComputeResource" type="self"/>
+            <Usage>dashboard</Usage>
+            <Usage>report</Usage>
+            <Usage>details</Usage>
+            <Usage>content</Usage>
+            <Controls>
+                <Control id="time-interval-selector_id_146" visible="false" type="time-interval-selector">
+                    <Property name="unit" value="DAYS"/>
+                    <Property name="count" value="1"/>
+                </Control>
+                <Control id="attributes-selector_id_147" visible="false" type="attributes-selector">
+                    <Property name="attributeInfos">
+                        <List>
+                            <Item>
+<Value>
+    <Property name="objectType" value="RESOURCE"/>
+    <Property name="attributeKey" value="Super Metric|sm_24e70bda-8214-4fc4-b258-29d2b8944c27"/>
+    <Property name="isStringAttribute" value="false"/>
+    <Property name="adapterKind" value="VMWARE"/>
+    <Property name="resourceKind" value="ClusterComputeResource"/>
+    <Property name="rollUpType" value="AVG"/>
+    <Property name="rollUpUnit" value="MINUTES"/>
+    <Property name="rollUpCount" value="5"/>
+    <Property name="transformations">
+        <List>
+            <Item value="NONE"/>
+        </List>
+    </Property>
+    <Property name="isProperty" value="false"/>
+    <Property name="displayName" value="Max VM IOPS in Entire Cluster"/>
+</Value>
+                            </Item>
+                            <Item>
+<Value>
+    <Property name="objectType" value="RESOURCE"/>
+    <Property name="attributeKey" value="Super Metric|sm_c9228097-8355-42a7-af04-ff7f4480227c"/>
+    <Property name="isStringAttribute" value="false"/>
+    <Property name="adapterKind" value="VMWARE"/>
+    <Property name="resourceKind" value="ClusterComputeResource"/>
+    <Property name="rollUpType" value="AVG"/>
+    <Property name="rollUpUnit" value="MINUTES"/>
+    <Property name="rollUpCount" value="5"/>
+    <Property name="transformations">
+        <List>
+            <Item value="NONE"/>
+        </List>
+    </Property>
+    <Property name="isProperty" value="false"/>
+    <Property name="displayName" value="Avg VM IOPS in Entire Cluster"/>
+</Value>
+                            </Item>
+                        </List>
+                    </Property>
+                </Control>
+            </Controls>
+            <DataProviders>
+                <DataProvider dataType="trend-view" id="trend-view_id_145"/>
+            </DataProviders>
+            <Presentation type="line-chart"/>
+        </ViewDef>
+        <ViewDef id="69a065f1-0094-4358-827f-6a29dcb893de">
+            <Title>MAX &amp; AVERAGE VIRTUAL DISK LATENCY FACED BY VMS OF THE SELECTED CLUSTER</Title>
+            <Description></Description>
+            <SubjectType adapterKind="VMWARE" resourceKind="ClusterComputeResource" type="self"/>
+            <Usage>dashboard</Usage>
+            <Usage>report</Usage>
+            <Usage>details</Usage>
+            <Usage>content</Usage>
+            <Controls>
+                <Control id="time-interval-selector_id_166" visible="false" type="time-interval-selector">
+                    <Property name="unit" value="DAYS"/>
+                    <Property name="count" value="1"/>
+                </Control>
+                <Control id="attributes-selector_id_167" visible="false" type="attributes-selector">
+                    <Property name="attributeInfos">
+                        <List>
+                            <Item>
+<Value>
+    <Property name="objectType" value="RESOURCE"/>
+    <Property name="attributeKey" value="Super Metric|sm_8f7c4549-a1c5-4d49-a014-7841b2f511ba"/>
+    <Property name="isStringAttribute" value="false"/>
+    <Property name="adapterKind" value="VMWARE"/>
+    <Property name="resourceKind" value="ClusterComputeResource"/>
+    <Property name="rollUpType" value="AVG"/>
+    <Property name="rollUpUnit" value="MINUTES"/>
+    <Property name="rollUpCount" value="5"/>
+    <Property name="transformations">
+        <List>
+            <Item value="NONE"/>
+        </List>
+    </Property>
+    <Property name="isProperty" value="false"/>
+    <Property name="displayName" value="Max VM Virtual Disk Latency (ms) in Entire Cluster"/>
+</Value>
+                            </Item>
+                            <Item>
+<Value>
+    <Property name="objectType" value="RESOURCE"/>
+    <Property name="attributeKey" value="Super Metric|sm_33cdf16e-a434-4146-8a78-70be0f70a7bd"/>
+    <Property name="isStringAttribute" value="false"/>
+    <Property name="adapterKind" value="VMWARE"/>
+    <Property name="resourceKind" value="ClusterComputeResource"/>
+    <Property name="rollUpType" value="AVG"/>
+    <Property name="rollUpUnit" value="MINUTES"/>
+    <Property name="rollUpCount" value="5"/>
+    <Property name="transformations">
+        <List>
+            <Item value="NONE"/>
+        </List>
+    </Property>
+    <Property name="isProperty" value="false"/>
+    <Property name="displayName" value="Avg VM Virtual Disk Latency (ms) in Entire Cluster"/>
+</Value>
+                            </Item>
+                        </List>
+                    </Property>
+                </Control>
+            </Controls>
+            <DataProviders>
+                <DataProvider dataType="trend-view" id="trend-view_id_165"/>
+            </DataProviders>
+            <Presentation type="line-chart"/>
+        </ViewDef>
+    </Views>
+</Content>

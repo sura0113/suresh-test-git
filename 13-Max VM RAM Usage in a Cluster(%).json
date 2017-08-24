@@ -1,0 +1,1 @@
+{"1542c5a5-e64e-4e95-b001-1e1f9c080d84":{"resourceKinds":[{"resourceKindKey":"ClusterComputeResource","adapterKindKey":"VMWARE"}],"name":"13-Max VM RAM Usage in a Cluster(%)","formula":"max(${adapterkind=VMWARE, resourcekind=VirtualMachine, attribute=mem|usage_average, depth=2})","description":""}}
